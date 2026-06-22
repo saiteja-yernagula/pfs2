@@ -1,0 +1,162 @@
+fullstack
+- frontend and backend and database
+
+website- collection of webpages
+
+webpage- a document that represents the content
+
+
+
+frontend technologies
+
+static website - content is fixed
+html- structure
+css - stylings
+
+dynamic website- content is not fixed
+javascript- interaction
+
+frameworks or library
+react
+
+
+
+
+HTML - hypertext markup language
+
+hypertext-text refer to the other text
+markup- a set of rules that defines how content should be displayed
+
+html
+it is a standard markup language that is used
+to create structure for a webpage
+it contains series of elements that represented by 
+tags
+
+
+tag
+<reserved word>
+
+element
+<reservedw>content </reservedw>
+open tag  -content - closing tag
+
+heading tag
+<h1>primary heading </h1>
+<h2>secondary heading</h2>
+<h3>content</h3>
+upto 
+<h6>content</h6>
+
+types of tags
+pair tags or container tags
+  combination of open tag and closing tag
+
+void tags or self closing tag
+<resword >
+
+
+basic structure of html
+
+<!DOCTYPE html>---declaration
+it tell the type of the document and version of the html
+
+root element 
+<html>
+
+it is used to define meta data and title and third party links
+<head>
+    <title>first webpage</title>
+</head>
+it is used to represents the content
+<body>
+
+
+</body>
+
+</html>
+
+
+heading tags
+h1- h6
+
+
+emmets
+shift 1---basic structure
+tagname
+h1* 10
+h1+h2+h3
+h1>h2>h3
+{content}
+
+paragraph tag
+<p>lorem content </p>
+
+anchor tags
+it is used define hyperlinks it is used for internal routing
+and external routing
+     <a href=""></a>
+
+
+attributes
+it is used to provide extra information about an element and
+it controls the behaviour of tag
+
+external routing
+1) absolute
+<a href="https://en.wikipedia.org/wiki/HTML" target="_self">external -absolute - html</a>
+
+target
+it refers where content should be opened
+target - blank ---new tab
+taget -self ---blank tag
+
+2) relative
+<a href="contact.html">contact</a>
+<a href="projects.html">projects</a>
+
+
+hr tag
+it is used to define horizantal ruler
+
+br tag
+it is used to break the content to the next line
+
+list tags
+1)  ordered list
+it is defined with ol tag
+and list item is defined with li tag
+ <ol>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+
+ </ol>
+2) unordered list
+<ul>
+    <li>item1</li>
+</ul>
+
+
+type="1"
+type="A"
+type="a"
+type="i"
+type="I"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
