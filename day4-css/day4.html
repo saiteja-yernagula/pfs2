@@ -6,18 +6,41 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="demo.css"> -->
     <style>
-       .s1{
-    background:blue
+       .s1,.s2,.s3{
+    background:blue;
+    width:400px;
+    height:300px;
+  padding: 10px 20px     ;
+   border: 7px solid rgb(15, 14, 14);
+   border-radius:20px;
+   margin:10px   40px;
        }
-       .s2{
-        background:yellow;
+     
+
+       h1{
+        background:#90ee90;
+        padding:20px;
+        margin:20px;
+        width:500px;
+        height:200px;
        }
-       .s3{
-        background:lightsalmon;
+       span{
+          background:#90ee90;
+          padding:20px;
+          margin:30px;
+          width:400px;
+          height:300px;
+          display:inline-block;
        }
-         #el1{
-    color:red;
-    }
+
+       .container{
+        background-image:url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Zuz3haRHrSz0f3bnMlUTGa14Qc7Z5LLQ3-l04P98hv9CMXQU');
+        height:500px;
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        background-attachment:fixed
+       }
+   
      </style>
 
 </head>
@@ -94,14 +117,100 @@ priority
 
     2) combinators
     3) pseudo class selectors
-    -->
-   
+    
 
+    specificity
+    1) id having high specificity
+    2) class
+    3) tag
+
+     #title1{
+        background:violet;
+    }
+    .t1{
+    background:blue;
+    }
+     h1{
+        background:black;
+    }
+
+
+
+    box model
+    it describes the prseentation of an element
+    it has four components
+    1) content
+       widht and height
+    
+    2) padding- it is the space inside the elemnt
+      padding:20px;
+      padding: 10px 20px 30px 40px;
+               top   right bottom left
+      padding: 10px 20px 30px;
+              top r/l    b;
+    padding: 10px 20px;
+            t/b   r/l
+
+    3) border - a line around an element
+   border: 1px solid red;
+          width style  color;
+
+          styles 
+          solid
+          dashed
+          double 
+          dotted
+          ridge 
+          groove
+          nonne
+
+        2) border-radius
+
+    4) margin
+    it is space around an element
+      margin:20px;
+      margin: 10px 20px 30px 40px;
+               top   right bottom left
+      margin: 10px 20px 30px;
+              top r/l    b;
+    margin: 10px 20px;
+            t/b   r/l
+
+
+    display propertiews
+    1) block
+    h1
+
+    2) inline  - 
+    we cannot apply width height margin top and bottom
+    a
+
+    3) inline-block
+    it will behave a inline tag but takes properties like block level
+
+    
+    backgorund
+    1) background-color:
+    2) background-image: url('img1.png')
+    -->
+
+    <div class="container">
+        background image container
+    </div>
+    
     <div class="s1">section1</div>
-    <div class="s2">section2</div>
-    <div class="s3">section3</div>
-     <div class="s1">section1</div>
-    <div class="s2" id="el1">section2</div>
-    <div class="s3">section3</div>
+    <div class="s2" style="background:yellow;">section2</div>
+    <div class="s3" style="background:lightsalmon">section3</div>
+    <div class="s1">section1</div>
+    <div class="s2" style="background:yellow;">section2</div>
+    <div class="s3" style="background:lightsalmon">section3</div>
+
+    <h1 class="t1" id="title1">element</h1>
+
+    <h1>block level</h1>
+
+    <div>
+        Lorem <span>ipsum dolor </span> sit amet consectetur adipisicing elit. Sint, obcaecati magnam deserunt at ducimus autem architecto nesciunt iste sed rerum iusto odio fuga. Doloremque, repellat qui adipisci sed voluptates suscipit?
+    </div>
 </body>
 </html>
