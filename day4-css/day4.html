@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+    <style>
+       .s1{
+    background:blue
+       }
+       .s2{
+        background:yellow;
+       }
+       .s3{
+        background:lightsalmon;
+       }
+         #el1{
+    color:red;
+    }
+     </style>
+
+</head>
+<body>
+    
+    <!-- 
+    css - cascading style sheet 
+    it is a style sheet language that is used to describe
+    the presentation of html document
+    it deals withs colors,fonts, animations,layouts and responsiveness
+
+    how to insert css
+    1) inline css
+    it is added to the tag with the help of style attribute
+    css styles comes with property and values
+
+    color:red;
+    declaration
+ 
+    <h1 style=" color:red;background:blue;">primary heading </h1>
+
+    2) internal css
+    styles are defined in head section within the style tag
+
+
+    css syntax
+    selector - it is used to target the html tags for applying styles
+    selector{
+        declartion
+    }
+    h2{
+        color:yellow;
+
+    }
+
+    3) external 
+    external styles are defined in external file that has extension
+    of .css
+    external file can be linked using link tag in head seciton
+<link rel="stylesheet" href="demo.css">
+    
+priority
+1) inline
+2)  internal or external - it depends how we define
+     <h1 style=" color:red;background:blue;">inline heading </h1>
+    <h2>internal heading</h2>
+    <h3>external heading</h3>
+
+    <div >element</div>
+
+
+    types of selectors
+    1) simple selectors
+     1) tag name or element selector
+     h1{
+     color:red;
+     }
+     2) class selector 
+      it is denoted with .classname
+      it is used to syle multiple tags 
+     we cans assign multiple classnames in class attribute
+      <div class='s1 a1'>
+        .s1{
+        color:blue;
+        }
+    
+    3) id selector
+    it is used to style the tag unique
+    it is denoted with #
+    #el1{
+    color:red;
+    }
+    <div class="s2" id="el1">section2</div>
+
+    2) combinators
+    3) pseudo class selectors
+    -->
+   
+
+    <div class="s1">section1</div>
+    <div class="s2">section2</div>
+    <div class="s3">section3</div>
+     <div class="s1">section1</div>
+    <div class="s2" id="el1">section2</div>
+    <div class="s3">section3</div>
+</body>
+</html>
