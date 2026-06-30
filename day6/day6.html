@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        /* 
+        combinators  h1>div
+        div>p
+        .container>div>a
+
+
+        font properties
+        font-size
+        font-weight
+        font-family
+
+        text properties
+        text-align:left or center or right;
+        letter-spacing;
+         word-spacing
+
+
+         hover
+         transition
+         transform
+         units
+         flex
+        */
+        /* p{
+            letter-spacing:4px;
+            word-spacing:10px;
+            line-height:2;
+            /* text-shadow: horizontalaxis verticalaxis radius color */
+            /* text-shadow: 0px 0px 2px red;
+            /* box-shadow:  horizontalaxis verticalaxis blur radius color ; */
+            box-shadow: 0px 0px 10px 1px violet;
+        } 
+        div{
+            background:lightseagreen;
+            width:300px;
+            height:300px;
+            transition:all 1s;
+        }
+        div:hover{
+            background:yellow;
+            /* width:330px;
+            height:330px; */
+            /* transform:translate(40px,10px); */
+            /* transform:scale(1.2,1.3); */
+            /* transform: rotate(-60deg) */
+            /* transform: rotateY(60deg) */
+            transform: rotateX(60deg);
+        } */
+    </style> -->
+    <style>
+        /* units
+        absolute px cm mm m inch
+        relative 
+        percentages-always depends on the parent
+        width:100%;
+        viewport - hieight and width
+        height:100vh;
+        width:50vw;
+        
+        rem - root element-16px - 1rem 16 2rem 32px
+        font-size:2rem;
+
+        div{
+            background:yellow;
+            width:50vw;
+            height:200vh;
+        }
+        p{
+            background:red;
+            width:50vw;
+        }
+        */
+
+        /* 
+        flexbox 
+        flexbox is a one dimensional layout model that is 
+        used to create layouts
+
+       flex parent properties
+       1) display: flex;
+       it wiil create flex box container and change the direction into row
+
+       2) justify-content
+       it will control the child items on main axis
+      /* justify-content:center; */
+       /* justify-content:end; */
+       /* justify-content:start; */
+       /* justify-content:space-between; */
+       /* justify-content:space-evenly; */
+       /* justify-content:space-around; 
+       3) align-items
+         it is used to control the child items on cross axis
+            align-items:stretch;
+            align-items:center;
+            align-items:start;
+            align-items:end;
+
+        4) flex wrap
+        it it used to create multiple rows
+        flex-wrap:wrap;
+        flex-wrap:wrap-reverse;
+
+        5) align-content
+            it is used to control the child items on cross axis
+            align-content:center;
+            align-content:start;
+            align-content:end;
+            align-content:space-between;
+            align-content:space-evenly;
+            align-content:space-around;
+
+        6) gap
+        it is used to create space between rows and cols
+        gap:row col;
+        gap:10px 20px;
+
+        7) flex-direction;
+        flex-direciton:row;
+        flex-direciton:row-reverse;
+        flex-direciton:column;
+        flex-direciton:column-reverse;
+
+
+        flex-flow
+        flex-flow: row wrap;
+
+
+
+
+
+       
+       flex child properties
+       flex-basis -it specifies initial width for a child
+
+        
+        */
+        .container{
+            height:100vh;
+            display:flex;
+            /* justify-content:end; */
+            /* justify-content:start; */
+            /* justify-content:space-between; */
+            /* justify-content:space-evenly; */
+            /* justify-content:space-around; */
+            justify-content:center;
+            /* flex-wrap:wrap; */
+            /* align-content:center;
+            align-content:start;
+            align-content:end;
+            align-content:space-between;
+            align-content:space-evenly;
+            align-content:space-around; */
+            gap:10px 20px;
+             flex-direction:row;
+        flex-direction:row-reverse;
+        /* flex-direction:column; */
+        /* flex-direction:column-reverse; */
+
+
+        }
+        .container>div{
+            background:lightskyblue;
+            width:300px;
+            padding:20px;
+            flex-basis:20%;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child1">content1</div>
+        <div class="child2">content2</div>
+        <div class="child3">content3</div>
+        <div class="child4">content4</div>
+        
+        <div class="child4">content5</div>
+    </div>
+
+
+    <div>
+        content
+        <p>paragraph</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora nostrum reprehenderit sequi molestias explicabo inventore perferendis odio asperiores, id ipsum perspiciatis animi veniam omnis ut. Odit amet nesciunt aspernatur.</p>
+    
+</body>
+</html>
